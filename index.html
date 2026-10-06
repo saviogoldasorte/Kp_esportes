@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ef">
+  <meta name="description" content="Camisas e artigos esportivos da Kp Esportes.">
+  <title>Kp Esportes — camisas e artigos esportivos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="brand.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement">KP ESPORTES <span>•</span> MATERIAL ESPORTIVO</div>
+  <header class="site-header">
+    <a class="wordmark" href="#inicio" aria-label="Kp Esportes, início">KP<span>•</span><small>ESPORTES</small></a>
+    <nav class="main-nav" aria-label="Navegação principal"><a href="#inicio">Início</a><a href="#produtos">Produtos</a><a href="#sobre">Sobre</a></nav>
+    <div class="header-actions"><a class="icon-button search-trigger" href="#produtos">Produtos <span>↘</span></a><button class="icon-button cart-trigger" aria-label="Abrir sacola">Sacola <span class="cart-count">0</span></button><button class="menu-trigger" aria-label="Abrir menu">☰</button></div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-dot"></span> KP ESPORTES</p><h1>A paixão<br>pelo futebol<br><em>veste a camisa.</em></h1><p class="hero-description">Camisas e artigos esportivos para quem leva o esporte com orgulho — dentro e fora de campo.</p><a class="button button-dark" href="#produtos">Conhecer a loja <span>↗</span></a><div class="hero-note"><span>↳</span> A SUA TORCIDA, O SEU JEITO.</div></div>
+      <div class="hero-art brand-art" role="img" aria-label="Arte gráfica da Kp Esportes"><div class="hero-art-image"></div><div class="brand-art-mark">KP<span>•</span></div><div class="hero-sticker">PAIXÃO<br><b>PELO SEU</b><br>CLUBE <span>↗</span></div><div class="hero-index">KP / ESPORTES</div><div class="hero-vertical">A SUA TORCIDA, O SEU JEITO</div></div>
+      <div class="hero-bottom"><span>KP ESPORTES</span><span class="scroll-line"></span><span>FUTEBOL · CAMISAS · TORCIDA</span></div>
+    </section>
+    <nav class="trust-strip category-strip" aria-label="Categorias de produtos"><a href="#categoria-nba"><b>NBA</b><span>↘</span></a><a href="#categoria-chuteiras-campo"><b>Campo</b><span>↘</span></a><a href="#categoria-chuteiras-futsal"><b>Futsal</b><span>↘</span></a><a href="#categoria-chuteiras-society"><b>Society</b><span>↘</span></a></nav>
+    <section class="catalog section-pad catalog-section" id="produtos"><div class="section-heading"><div><p class="eyebrow">CATÁLOGO KP ESPORTES</p><h2>Produtos para<br>o seu <em>esporte.</em></h2><p class="archive-intro">Catálogo separado por categoria e modalidade. Confira as chuteiras de campo, futsal e society.</p></div></div><div id="product-groups" aria-live="polite"></div><div class="coming-categories"><p class="eyebrow">OUTRAS CATEGORIAS PARA DEPOIS</p><p><span>Camisas de clubes</span><span>Acessórios</span><span>Bolas</span><span>Caneleiras</span><span>Canelitos / meiões</span><span>Fitas elásticas e kinesio</span><span>Kit de treino</span><span>Luvas</span><span>Meias antiderrapantes</span><span>Porta chuteiras / bolsas</span><span>Shorts de futebol</span><span>Outros materiais esportivos</span></p></div></section>
+    <section class="manifesto" id="sobre"><div class="manifesto-mark">KP</div><div><p class="eyebrow">SOBRE A LOJA</p><h2>Feita para quem<br>vive o <em>futebol.</em></h2></div><p>A Kp Esportes reúne camisas e artigos para torcer, jogar e celebrar o esporte.</p><a href="#produtos" class="manifesto-arrow" aria-label="Ver produtos">↗</a></section>
+    <section class="newsletter"><div><p class="eyebrow">FIQUE POR DENTRO</p><h2>Novidades da<br><em>Kp Esportes.</em></h2></div><form id="newsletter-form"><label for="email">Seu melhor e-mail</label><div class="email-field"><input id="email" type="email" placeholder="voce@email.com" required><button aria-label="Inscrever-se">↗</button></div><small>Formulário demonstrativo; ainda não envia e-mails.</small><p id="newsletter-message" role="status"></p></form></section>
+  </main>
+  <footer><a class="wordmark" href="#inicio">KP<span>•</span><small>ESPORTES</small></a><span>Camisas e artigos esportivos.</span><a class="footer-contact" href="mailto:kayque99@kpsportes.com.br">kayque99@kpsportes.com.br</a><span>© 2026 Kp Esportes</span></footer>
+  <div class="overlay" id="overlay"></div>
+  <aside class="cart-drawer" aria-label="Sua sacola" aria-hidden="true">
+    <div class="drawer-head"><h2><span class="drawer-title">Sua sacola</span> <span class="cart-count">0</span></h2><button class="close-drawer" aria-label="Fechar sacola">×</button></div>
+    <section class="cart-view">
+      <div class="cart-items"></div>
+      <div class="cart-empty"><span>↗</span><p>Sua próxima aventura começa aqui.</p><button class="button button-dark continue-shopping">Voltar à loja</button></div>
+      <div class="cart-summary"><div><span>Subtotal</span><b class="subtotal">R$ 0,00</b></div><small>Frete ainda não calculado.</small><button class="button button-dark checkout-button">Continuar para checkout <span>↗</span></button><p class="demo-note">Sacola de demonstração.</p></div>
+    </section>
+    <section class="checkout-view" hidden>
+      <button class="back-to-cart">← Voltar à sacola</button>
+      <p class="eyebrow checkout-kicker">FINALIZAÇÃO DEMONSTRATIVA</p>
+      <form id="checkout-form">
+        <fieldset><legend>Seus dados</legend>
+          <label for="checkout-name">Nome completo</label><input id="checkout-name" name="name" autocomplete="name" required>
+          <label for="checkout-email">E-mail</label><input id="checkout-email" name="email" type="email" autocomplete="email" required>
+          <label for="checkout-phone">Celular</label><input id="checkout-phone" name="phone" type="tel" autocomplete="tel" required>
+        </fieldset>
+        <fieldset><legend>Endereço de entrega</legend>
+          <label for="checkout-postcode">CEP</label><input id="checkout-postcode" name="postcode" inputmode="numeric" autocomplete="postal-code" placeholder="00000-000" required>
+          <label for="checkout-street">Rua / avenida</label><input id="checkout-street" name="street" autocomplete="street-address" required>
+          <div class="checkout-field-row"><div><label for="checkout-number">Número</label><input id="checkout-number" name="number" required></div><div><label for="checkout-complement">Complemento</label><input id="checkout-complement" name="complement" autocomplete="address-line2"></div></div>
+          <div class="checkout-field-row"><div><label for="checkout-city">Cidade</label><input id="checkout-city" name="city" autocomplete="address-level2" required></div><div><label for="checkout-state">UF</label><input id="checkout-state" name="state" maxlength="2" autocomplete="address-level1" required></div></div>
+        </fieldset>
+        <fieldset><legend>Forma de pagamento</legend>
+          <label class="payment-option"><input type="radio" name="paymentMethod" value="Pix" required checked><span><b>Pix</b><small>Na loja real, o provedor gera o QR Code.</small></span></label>
+          <label class="payment-option"><input type="radio" name="paymentMethod" value="Cartão de crédito" required><span><b>Cartão de crédito</b><small>Na loja real, o pagamento é processado com segurança pelo provedor.</small></span></label>
+        </fieldset>
+        <div class="checkout-order-summary"><h3>Resumo do pedido</h3><div class="checkout-items"></div></div>
+        <div class="checkout-total"><span>Subtotal dos produtos</span><b>R$ 0,00</b></div>
+        <p class="checkout-shipping-note">O frete ainda não está incluído nesta etapa.</p>
+        <p class="checkout-demo-warning">Protótipo para aprendizado: nenhuma cobrança será feita e nenhum dado pessoal será enviado ou salvo no pedido.</p>
+        <button class="button button-dark checkout-submit" type="submit">Criar pedido de demonstração <span>↗</span></button>
+      </form>
+    </section>
+    <section class="order-success" hidden>
+      <span class="success-mark">✓</span><p class="eyebrow">PEDIDO DE DEMONSTRAÇÃO</p><h2>Resumo pronto.</h2>
+      <p>Número do pedido: <b class="demo-order-number"></b></p><p>Forma escolhida: <b class="demo-payment-choice"></b></p>
+      <p class="checkout-demo-warning">Nenhum pagamento foi processado. O próximo passo será conectar o site a um provedor seguro.</p>
+      <button class="button button-dark finish-order">Voltar à loja <span>↗</span></button>
+    </section>
+  </aside>
+  <div class="toast" role="status" aria-live="polite"></div>
